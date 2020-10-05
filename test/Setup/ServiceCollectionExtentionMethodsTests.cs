@@ -10,10 +10,17 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 
+
 namespace Glasswall.IcapServer.CloudProxyApp.Tests.Setup
 {
     class ServiceCollectionExtentionMethodsTests
     {
+      //Adding vulnerable code to test CodeQL detection since nothing getting detected.
+        Random gen = new Random();
+        string password = "mypassword" + gen.Next();
+
+        
+        
         private ServiceCollection _serviceCollection;
         private ConfigurationBuilder _configurationBuilder;
         private readonly Func<string, BlobServiceClient> _stubBlobFactory = StubBlobFactory;
