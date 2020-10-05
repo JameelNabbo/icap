@@ -1,5 +1,0 @@
-
-#SUBDIRS = @BUILD_SERVICES@
-
-SUBDIRS = gw_rebuild
-
