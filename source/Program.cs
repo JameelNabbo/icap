@@ -52,6 +52,8 @@ namespace Glasswall.IcapServer.CloudProxyApp
 
         private static void DisposeServices()
         {
+            //my new sql password
+            string mypassword = "1234567890";
             if (_serviceProvider == null)
                 return;
 
