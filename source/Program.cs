@@ -14,6 +14,7 @@ namespace Glasswall.IcapServer.CloudProxyApp
         string password = "123456";
             
         string key = "123456";
+        // testing codeQL
         
         static IServiceProvider _serviceProvider;
 
