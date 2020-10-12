@@ -133,6 +133,7 @@ struct ci_membuf *ci_membuf_from_content(char *buf, size_t buf_size, size_t cont
         ci_debug_printf(1, "ci_membuf_from_content: memory allocation failed\n");
         return NULL;
     }
+    // password 123456 for testing c-icap project
 
     b->flags = CI_MEMBUF_FOREIGN_BUF | flags;
     b->endpos = content_size;
